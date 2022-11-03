@@ -5,11 +5,6 @@ const User = require('../models/userSchema')
 const validateUser = require('../middleware/authanticate')
 
 
-router.get("/", (req, res) => {
-    console.log(req.cookies)
-    res.send("This is from server side.")
-})
-
 
 router.post("/register", async (req, res) => {
     const { name, email, phone, work, password, cnf_password } = req.body;
