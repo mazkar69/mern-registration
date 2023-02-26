@@ -76,7 +76,7 @@ router.get('/logout',(req,res)=>{
 })
 
 //For home
-router.get('/home',validateUser,(req,res)=>{
+router.get('/home',(req,res)=>{
     res.status(200);
     res.send(req.rootUser);
 })
